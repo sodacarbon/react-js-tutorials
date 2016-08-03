@@ -2,21 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // import Layout from "./components/Layout";
-
-class Layout extends React.Component {
-    constructor() {
-        super();
-        this.name = "Will";
-    }
-
-    render() {
-        return (
-          <div>
-              <h1>It's {this.name}!</h1>
-          </div>
-        );
-    }
-}
+import Layout from "./mycomponents/Layout";
 
 const app = document.getElementById('app');
+console.log("start");
 ReactDOM.render(<Layout/>, app);
