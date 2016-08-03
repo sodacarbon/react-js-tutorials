@@ -3,18 +3,17 @@
  */
 import React from "react";
 
-export default class Layout extends React.Component {
-    constructor() {
-        super();
-        this.name = "Will";
-        console.log("Inside class Layout");
-    }
+import Header from "./Header";
+import Body from "./Body";
+import Footer from "./Footer";
 
+export default class Layout extends React.Component {
     render() {
         return (
             <div>
-                <h1>It's {this.name}!</h1>
-                <h2>export "default" class... is critical!</h2>
+                <Header />
+                <Body />
+                <Footer />
             </div>
         );
     }
