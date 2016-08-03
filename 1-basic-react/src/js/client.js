@@ -5,10 +5,16 @@ import ReactDOM from "react-dom";
 
 class Layout extends React.Component {
     val1 = 'Will';
+    getVal(val) {
+        return "Another Will " + val;
+    }
 
     render() {
         return (
-          <h1>It's {this.val1}!</h1>
+          <div>
+              <h1>It's {this.val1}!</h1>
+              <h1>It's {this.getVal(555)}</h1>
+          </div>
         );
     }
 }
