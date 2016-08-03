@@ -4,16 +4,15 @@ import ReactDOM from "react-dom";
 // import Layout from "./components/Layout";
 
 class Layout extends React.Component {
-    val1 = 'Will';
-    getVal(val) {
-        return "Another Will " + val;
+    constructor() {
+        super();
+        this.name = "Will";
     }
 
     render() {
         return (
           <div>
-              <h1>It's {this.val1}!</h1>
-              <h1>It's {this.getVal(555)}</h1>
+              <h1>It's {this.name}!</h1>
           </div>
         );
     }
