@@ -6,8 +6,9 @@ import React from "react";
 
 export default class Title extends React.Component {
     render() {
+        console.log(this.props); // Title Properties
         return (
-            <h1>Welcome. This is Title component, inside Header component</h1>
+            <h1>{this.props.title}</h1>
         );
     }
 }
