@@ -8,9 +8,19 @@ import Body from "./Body";
 import Footer from "./Footer";
 
 export default class Layout extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            name: "Will",
+        }
+    }
     render() {
+        setTimeout(() => {
+            this.setState({name: "Bob"});
+        }, 1000);
         return (
             <div>
+                this.state.name = {this.state.name} <!-- <span /> -->
                 <Header />
                 <Body />
                 <Footer />
